@@ -66,11 +66,12 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  position: absolute;
+  position: fixed;
   top: 0;
   justify-content: space-between;
   background-color: var(--brand-secondary);
   z-index: 99;
+  opacity: 90%;
 } 
 
 .nav-logo {
@@ -216,11 +217,18 @@ nav {
 .splash-link {
   z-index: 10;
   position: absolute;
-  bottom: 10%;
-  margin-right: 12%;
+  bottom: 15%;
+  margin-right: 15%;
   animation: middleMove, opacity;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--brand-main);
+}
+
+.splash-link-alt {
+  color: var(--brand-secondary);
 }
 
 .middle-float-lower {
@@ -304,12 +312,76 @@ nav {
 }
 
 
+
+
+/* Highlights Section */
+
+.highlights-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  width: calc(100% / 6);
+  margin: 0;
+  position: relative;
+}
+
+.photo-card img {
+  width: 100%;
+}
+
+.photo-card-hover {
+  width: 100%;
+  position: absolute;
+  padding: 50px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  transition: all ease-in-out 0.5s;
+}
+
+.photo-card-hover h3 {
+  width: 100%;
+}
+
+.photo-card-hover:hover {
+  opacity: 80%;
+}
+
+
+/* Contact Section */
+
+.contact-form-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form-container input,
+.contact-form-container label,
+.contact-form-container textarea {
+  width: 100%;
+}
+
+/* .emailjs-success {
+  display: none;
+} */
+
 /* Footer */
 
 footer {
   width: 100%;
   min-height: 50px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: var(--brand-main);
   color: var(--brand-secondary);
