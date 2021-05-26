@@ -5,20 +5,20 @@ import emailjs from 'emailjs-com';
 export default function Contact() {
 
 
-  function sendEmail(e) {
+function sendEmail(e) {
     e.preventDefault();
 
-
     emailjs.sendForm('service_p5jlius', 'template_0fd395w', e.target, 'user_V4EYC7W6wwovzMtpBXatH')
-        .then((result) => {
-            console.log(result.text);
+    
+    .then((result) => {
+            console.log('SUCCESS!', result.text);
         }, (error) => {
-            console.log(error.text);
-        });
-    }
+            console.log('Something Went Wrong...',error.text);
+    });
+}
 
 
-  return (
+return (
     <div className="contact-container">
         <div className="cta-container">
 
