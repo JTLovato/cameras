@@ -43,10 +43,10 @@ export default function Header() {
 
             <ul className="nav-bar">
                 <li><a href="#" data-hover="Home">Home</a></li>
-                <li><a href="#" data-hover="About Us">About Us</a></li>
-                <li><a href="#" data-hover="Blog">Blog</a></li>
-                <li><a href="#" data-hover="Services">Services</a></li>
                 <li><a href="#" data-hover="Contact">Contact</a></li>
+                <li><a href="#" data-hover="About Us">About Us</a></li>
+                <li><a href="#" data-hover="Testimonies">Testimonies</a></li>
+                <li><a href="#" data-hover="Services">Services</a></li>
             </ul>
 
 

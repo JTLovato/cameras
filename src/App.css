@@ -5,6 +5,10 @@
   --brand-secondary: #f8f0f6;
 }
 
+body {
+  background-color: var(--brand-secondary);
+}
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
 *{
@@ -26,9 +30,8 @@
   }
 }
 
-.App-header {
+header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,14 +315,17 @@ nav {
 }
 
 
-
-
 /* Highlights Section */
+
+label {
+  margin:8px;
+}
 
 .highlights-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .photo-card {
@@ -360,29 +366,77 @@ nav {
 
 /* Contact Section */
 
-.contact-form-container {
-  width: 50%;
+
+.contact-container {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  margin: 100px;
 }
 
-.contact-form-container input,
-.contact-form-container label,
-.contact-form-container textarea {
+.contact-container h1 {
   width: 100%;
+  color: var(--brand-main);
 }
 
-/* .emailjs-success {
-  display: none;
-} */
+.form-container,
+.contact-info {
+  width: 45%;
+  min-width: 350px;
+  z-index: 4;
+  margin: 10px 10px;
+  padding: 10px 80px;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.0px );
+  -webkit-backdrop-filter: blur( 13.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--brand-main);
+}
+
+.form-container textarea {
+  height: 300px;
+}
+
+
+/* About  */
+
+.team-member-container {
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+
+.team-photo {
+  width: 60%;
+  background-color: red;
+  position: absolute;
+  min-height: 500px;
+  left: 0;
+}
+
+.team-info {
+  width: 60%;
+  background-color: blue;
+  position: absolute;
+  min-height: 500px;
+  right: 0;
+  opacity: 50%;
+}
 
 /* Footer */
 
 footer {
   width: 100%;
   min-height: 50px;
-  position: relative;
-  bottom: 0;
   background-color: var(--brand-main);
   color: var(--brand-secondary);
 }
