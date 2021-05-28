@@ -409,34 +409,13 @@ label {
 
 /* About  */
 
-.team-member-container {
-  width: 80%;
-  margin: 0 10%;
-  position: relative;
-}
 
-.team-photo {
-  width: 60%;
-  background-color: red;
-  position: absolute;
-  min-height: 500px;
-  left: 0;
-}
-
-.team-info {
-  width: 60%;
-  background-color: blue;
-  position: absolute;
-  min-height: 500px;
-  right: 0;
-  opacity: 50%;
-}
 
 /* Footer */
 
 footer {
   width: 100%;
-  min-height: 50px;
+  min-height: 100px;
   background-color: var(--brand-main);
   color: var(--brand-secondary);
 }
